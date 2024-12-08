@@ -759,7 +759,7 @@ function library:Introduction()
     CNNBLSICON.Size = UDim2.new(0, 448, 0, 150)
     CNNBLSICON.Visible = true
     CNNBLSICON.Image = "http://www.roblox.com/asset/?id=18393935853"
-    CNNBLSICON.ImageColor3 = Color3.fromRGB(159, 115, 255)
+    CNNBLSICON.ImageColor3 = Color3.fromRGB(196, 2, 2)
     CNNBLSICON.ImageTransparency = 1
     
     hashLogo.Name = "hashLogo"
