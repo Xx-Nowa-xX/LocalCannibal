@@ -692,7 +692,7 @@ function library:Introduction()
     local bar = Instance.new("Frame")
     local barCorner = Instance.new("UICorner")
     local barLayout = Instance.new("UIListLayout")
-    local xsxLogo = Instance.new("ImageLabel")
+    local CNNBLSICON = Instance.new("ImageLabel")
     local hashLogo = Instance.new("ImageLabel")
     local xsx = Instance.new("TextLabel")
     local text = Instance.new("TextLabel")
@@ -750,17 +750,17 @@ function library:Introduction()
     barLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
     barLayout.SortOrder = Enum.SortOrder.LayoutOrder
     
-    xsxLogo.Name = "xsxLogo"
-    xsxLogo.Parent = background
-    xsxLogo.AnchorPoint = Vector2.new(0.5, 0.5)
-    xsxLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    xsxLogo.BackgroundTransparency = 1.000
-    xsxLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
-    xsxLogo.Size = UDim2.new(0, 448, 0, 150)
-    xsxLogo.Visible = true
-    xsxLogo.Image = "http://www.roblox.com/asset/?id=18393935853"
-    xsxLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
-    xsxLogo.ImageTransparency = 1
+    CNNBLSICON.Name = "CNNBLSICON"
+    CNNBLSICON.Parent = background
+    CNNBLSICON.AnchorPoint = Vector2.new(0.5, 0.5)
+    CNNBLSICON.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    CNNBLSICON.BackgroundTransparency = 1.000
+    CNNBLSICON.Position = UDim2.new(0.5, 0, 0.5, 0)
+    CNNBLSICON.Size = UDim2.new(0, 448, 0, 150)
+    CNNBLSICON.Visible = true
+    CNNBLSICON.Image = "http://www.roblox.com/asset/?id=18393935853"
+    CNNBLSICON.ImageColor3 = Color3.fromRGB(159, 115, 255)
+    CNNBLSICON.ImageTransparency = 1
     
     hashLogo.Name = "hashLogo"
     hashLogo.Parent = background
@@ -769,7 +769,7 @@ function library:Introduction()
     hashLogo.BackgroundTransparency = 1.000
     hashLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
     hashLogo.Size = UDim2.new(0, 150, 0, 150)
-    hashLogo.Visible = True
+    hashLogo.Visible = False
     hashLogo.Image = "http://www.roblox.com/asset/?id=18393935853"
     hashLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
     hashLogo.ImageTransparency = 1
@@ -804,15 +804,6 @@ function library:Introduction()
     pageLayout.SortOrder = Enum.SortOrder.LayoutOrder
     pageLayout.VerticalAlignment = Enum.VerticalAlignment.Center
 
-    CreateTween("xsxRotation", 0)
-    local MinusAmount = -16
-    coroutine.wrap(function()
-        while wait() do
-            MinusAmount = MinusAmount + 0.4
-            TweenService:Create(xsxLogo, TweenTable["xsxRotation"], {Rotation = xsxLogo.Rotation - MinusAmount}):Play()
-        end
-    end)()
-
     TweenService:Create(edge, TweenTable["introduction"], {BackgroundTransparency = 0}):Play()
     TweenService:Create(background, TweenTable["introduction"], {BackgroundTransparency = 0}):Play()
     wait(.2)
@@ -821,9 +812,9 @@ function library:Introduction()
     TweenService:Create(xsx, TweenTable["introduction"], {TextTransparency = 0}):Play()
     TweenService:Create(text, TweenTable["introduction"], {TextTransparency = 0}):Play()
     wait(.3)
-    TweenService:Create(xsxLogo, TweenTable["introduction"], {ImageTransparency = 0}):Play()
+    TweenService:Create(CNNBLSICON, TweenTable["introduction"], {ImageTransparency = 0}):Play()
     wait(2)
-    TweenService:Create(xsxLogo, TweenTable["introduction"], {ImageTransparency = 1}):Play()
+    TweenService:Create(CNNBLSICON, TweenTable["introduction"], {ImageTransparency = 1}):Play()
     wait(.2)
     TweenService:Create(hashLogo, TweenTable["introduction"], {ImageTransparency = 0}):Play()
     wait(2)
