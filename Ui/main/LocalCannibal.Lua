@@ -18,7 +18,7 @@ for i = 20,0,-1 do
     local LoadingXSX = Notif:Notify("Carving you open...", 3, "information") -- notification, alert, error, success, information
 end 
 
-library.title = "Tearing off flesh"
+library.title = "LocalCannibal.xyz"
 
 library:Introduction()
 wait(1)
@@ -82,7 +82,7 @@ end)
 
 
 
-local FinishedLoading = Notif:Notify("Loaded xsx example", 4, "success")
+local FinishedLoading = Notif:Notify("Loading: Complete", 4, "Have fun cannibalizing corpses")
 
 -- // FUNCTION DOCS: 
 --[[
