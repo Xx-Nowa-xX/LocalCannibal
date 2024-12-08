@@ -18,7 +18,7 @@ for i = 20,0,-1 do
     local LoadingXSX = Notif:Notify("Loading xsx lib v2, please be patient.", 3, "information") -- notification, alert, error, success, information
 end 
 
-library.title = "LocalCannibal"
+library.title = "Vigil"
 
 library:Introduction()
 wait(1)
