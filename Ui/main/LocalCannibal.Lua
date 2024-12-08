@@ -1,8 +1,8 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Xx-Nowa-xX/LocalCannibal/refs/heads/main/Ui/main/Gui.Lua"))()
 
 
-library.rank = "developer"
-local Wm = library:Watermark("xsx example | v" .. library.version ..  " | " .. library:GetUsername() .. " | rank: " .. library.rank)
+library.rank = "Cannibal"
+local Wm = library:Watermark("Using your guts <3 | v" .. library.version ..  " | " .. library:GetUsername() .. " | rank: " .. library.rank)
 local FpsWm = Wm:AddWatermark("fps: " .. library.fps)
 coroutine.wrap(function()
     while wait(.75) do
@@ -15,7 +15,7 @@ local Notif = library:InitNotifications()
 
 for i = 20,0,-1 do 
     task.wait(0.05)
-    local LoadingXSX = Notif:Notify("𝙲𝚊𝚛𝚟𝚒𝚗𝚐 𝚢𝚘𝚞 𝚘𝚙𝚎𝚗...", 3, "information") -- notification, alert, error, success, information
+    local LoadingXSX = Notif:Notify("Carving you open...", 3, "information") -- notification, alert, error, success, information
 end 
 
 library.title = "Vigil"
