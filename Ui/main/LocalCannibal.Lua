@@ -18,7 +18,7 @@ for i = 20,0,-1 do
     local LoadingXSX = Notif:Notify("Carving you open...", 3, "information") -- notification, alert, error, success, information
 end 
 
-library.title = "Vigil"
+library.title = "Tearing off flesh"
 
 library:Introduction()
 wait(1)
